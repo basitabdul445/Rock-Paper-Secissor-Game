@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Secissor Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="heading"><h1>Rock , Paper , Scissor Game</h1></div>
+
+        <div class="game_container">
+
+            <div id="star_game_btn">
+                <div class="container">
+                    <button type="button" onclick="showOrHide('hide' , 'show' , 'hide' , 'hide', 'hide');">StartGame</button>
+                </div>
+            </div>
+
+            <div id="user_choise_btns" class="hide">
+                <div class="container">
+                    <button type="button" onclick="userSelected('Rock');">Rock</button>
+                    <button type="button" onclick="userSelected('Paper');">Paper</button>
+                    <button type="button" onclick="userSelected('Scissor');">Scissor</button>
+                </div>
+            </div>
+
+            <div id="game_result" class="hide"></div>
+
+            <div id="game_description" class="hide">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="play_again_and_quit_game_btn" class="hide">
+                <div class="container">
+                    <button type="button" onclick="showOrHide('hide' , 'show' , 'hide' , 'show' , 'hide');">Play Again </button>
+                    <button type="button" onclick="showOrHide('show' , 'hide' , 'hide' , 'hide' , 'hide'); resetCount();">Quit Game </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
